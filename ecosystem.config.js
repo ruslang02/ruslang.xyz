@@ -7,7 +7,7 @@ module.exports = {
     name: 'ruslang.xyz',
     script: 'index.js',
     env_production: {
-      PORT: 9001,
+      PORT: 9004,
     },
     autorestart: true,
     watch: true,
