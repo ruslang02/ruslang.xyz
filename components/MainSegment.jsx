@@ -41,9 +41,11 @@ export default function MainSegment() {
         <p>A guy from snowy Russia that is very passionate about writing code.</p>
         <p>
           I am
+          {' '}
           <b>{dateSince.getYear() - 70}</b>
           {' '}
           years old, freshman in
+          {' '}
           <a href="https://hse.ru">Higher School of Economics</a>
           , Software Engineering.
         </p>

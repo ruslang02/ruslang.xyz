@@ -2,14 +2,14 @@ import { Card, Icon } from 'semantic-ui-react';
 import styled from 'styled-components';
 
 import React from 'react';
-import Abilities from '../data/Abilities.json';
+import Abilities from '../data/Abilities';
 
 const AbilitesGrid = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
   justify-content: start;
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     grid-template-columns: 25% 25% 25% 25%;
   }
 `;
@@ -42,13 +42,15 @@ export default function AbilitesSegment() {
       </Card.Content>
       <Card.Content>
         <AbilitesGrid>
-          {Abilities.map((elem) => (
-            <Ability key={elem.name}>
-              <GradientIcon name={elem.icon} size="huge" colors={elem.colors} />
-              <b>{elem.name}</b>
-              <small>{elem.description}</small>
-            </Ability>
-          ))}
+          {
+            Abilities.map((elem) => (
+              <Ability key={elem.name}>
+                <GradientIcon name={elem.icon} size="huge" colors={elem.colors} />
+                <b>{elem.name}</b>
+                <small>{elem.description}</small>
+              </Ability>
+            ))
+          }
         </AbilitesGrid>
       </Card.Content>
     </Card>
