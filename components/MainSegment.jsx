@@ -34,7 +34,7 @@ export default function MainSegment() {
   return (
     <FlexSegment>
       <ImageContainer>
-        <Image src="/img/avatar.png" size="small" circular style={{ display: 'inline-block' }} />
+        <Image src="/img/avatar.jpg" size="small" circular style={{ display: 'inline-block' }} />
       </ImageContainer>
       <InfoContainer>
         <h2>Ruslan Garifullin</h2>
