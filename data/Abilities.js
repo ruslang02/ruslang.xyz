@@ -11,7 +11,7 @@ export default [{
 }, {
   name: 'React',
   icon: 'react',
-  description: '6 months, 4 web apps',
+  description: '6 months',
   colors: ['#28778c', '#60dbfb'],
 }, {
   name: 'Containers',
@@ -21,7 +21,7 @@ export default [{
 }, {
   name: 'Databases',
   icon: 'database',
-  description: 'MongoDB, MySQL',
+  description: 'MongoDB, PostgreSQL',
   colors: ['#818c28', '#fbd260'],
 }, {
   name: 'Linux',
